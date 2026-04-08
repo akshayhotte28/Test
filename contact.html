@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Urban Aura Apparel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Urban Aura</a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-link" href="cart.html">Cart <span id="cart-count">0</span></a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-hero small-hero">
+      <div class="container hero-content">
+        <div>
+          <span class="eyebrow">Get in touch</span>
+          <h1>Questions? Collaborations? Say hello.</h1>
+          <p>Our team is here to help with styling, orders, and brand inquiries.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact">
+      <div class="container contact-grid">
+        <div class="contact-details">
+          <h2>Contact details</h2>
+          <p>support@urbanaura.com</p>
+          <p>Mon–Fri, 9am–6pm</p>
+          <p>Follow us on social channels for new releases and style inspiration.</p>
+        </div>
+        <form class="contact-form" onsubmit="return false;">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Tell us how we can help" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="note">This site is a demo. The form does not submit to a backend.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Urban Aura Apparel © 2026</p>
+      <div class="footer-links">
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
